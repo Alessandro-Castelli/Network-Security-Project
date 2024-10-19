@@ -1,0 +1,19 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduzione}{3}{section.1}%
+\contentsline {section}{\numberline {2}Threat model}{4}{section.2}%
+\contentsline {section}{\numberline {3}Security goals}{6}{section.3}%
+\contentsline {section}{\numberline {4}Security service and implementation}{7}{section.4}%
+\contentsline {section}{\numberline {5}Attacks and Vulnerabilities}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}5G NSA}{9}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Minacce al Radio Access Network}{10}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Core Network Security Threats}{11}{subsubsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.2}Attacchi alle reti 5G SA}{12}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Attacchi basati sul protocollo}{12}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Attacchi basati sul protocollo RRC}{12}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Attacchi basati sul protocollo NAS}{12}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Attacchi basati sul protocollo GTP}{13}{subsubsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.4}Attacchi basati sul protocollo Diameter}{13}{subsubsection.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.5}Attacchi basati sul protocollo SS7}{13}{subsubsection.5.3.5}%
+\contentsline {subsubsection}{\numberline {5.3.6}Attacchi nel piano utente}{13}{subsubsection.5.3.6}%
+\contentsline {section}{\numberline {6}Conclusions}{14}{section.6}%
+\contentsline {section}{\numberline {A}Termini da ricordare}{15}{appendix.A}%

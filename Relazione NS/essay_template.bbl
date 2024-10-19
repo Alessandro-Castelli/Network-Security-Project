@@ -1,0 +1,422 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Ahmad2019Security}{article}{}
+      \name{author}{6}{}{%
+        {{hash=eebf4fb222abfe808a19fa689bdab8cb}{%
+           family={Ahmad},
+           familyi={A\bibinitperiod},
+           given={Ijaz},
+           giveni={I\bibinitperiod}}}%
+        {{hash=bb8736098f309d9425e2b0156b4088cc}{%
+           family={Shahabuddin},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=24c5ad1fd87405708bd68c7dc1b0088b}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6f9d0dfa642a0798508f96527b39ac99}{%
+           family={Okwuibe},
+           familyi={O\bibinitperiod},
+           given={Jude},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f09115fcbbb7a0e1054c3b337b6c2492}{%
+           family={Gurtov},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e2a11c1b5cb6e1d9980b8fb7c0305f18}{%
+           family={Ylianttila},
+           familyi={Y\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4ec5dad8de4fdee67f5a40c2366f60c}
+      \strng{fullhash}{3dd21905360917dcb509eb3495e9d7cb}
+      \strng{bibnamehash}{a4ec5dad8de4fdee67f5a40c2366f60c}
+      \strng{authorbibnamehash}{a4ec5dad8de4fdee67f5a40c2366f60c}
+      \strng{authornamehash}{a4ec5dad8de4fdee67f5a40c2366f60c}
+      \strng{authorfullhash}{3dd21905360917dcb509eb3495e9d7cb}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Communications Surveys \& Tutorials}
+      \field{title}{Security for 5G and Beyond}
+      \field{volume}{21}
+      \field{year}{2019}
+      \field{pages}{3682\bibrangedash 3722}
+      \range{pages}{41}
+      \verb{doi}
+      \verb 10.1109/COMST.2019.2916180
+      \endverb
+    \endentry
+    \entry{dangi2021study}{article}{}
+      \name{author}{5}{}{%
+        {{hash=2594cb1b8850dcf676be7c4127e53a1b}{%
+           family={Dangi},
+           familyi={D\bibinitperiod},
+           given={Ramraj},
+           giveni={R\bibinitperiod}}}%
+        {{hash=bdf560ea136a39ee0cecb81014478bf2}{%
+           family={Lalwani},
+           familyi={L\bibinitperiod},
+           given={Praveen},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e9b541c238a0c2cba65066d46d66a70d}{%
+           family={Choudhary},
+           familyi={C\bibinitperiod},
+           given={Gaurav},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a31096762b5ffeda6e1ec00626db3c2a}{%
+           family={You},
+           familyi={Y\bibinitperiod},
+           given={Ilsun},
+           giveni={I\bibinitperiod}}}%
+        {{hash=b2ee3c395668c0ab3e4363a71bc76054}{%
+           family={Pau},
+           familyi={P\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{621da3abd1e63cefc3e8f8a641b3384b}
+      \strng{fullhash}{0ccfc11d7a5286a29666c698b2a115da}
+      \strng{bibnamehash}{621da3abd1e63cefc3e8f8a641b3384b}
+      \strng{authorbibnamehash}{621da3abd1e63cefc3e8f8a641b3384b}
+      \strng{authornamehash}{621da3abd1e63cefc3e8f8a641b3384b}
+      \strng{authorfullhash}{0ccfc11d7a5286a29666c698b2a115da}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors}
+      \field{number}{1}
+      \field{title}{Study and investigation on 5G technology: A systematic review}
+      \field{volume}{22}
+      \field{year}{2021}
+    \endentry
+    \entry{javid20225g}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=c1c065582baaf571c73e7eef982a1f7e}{%
+           family={Javid},
+           familyi={J\bibinitperiod},
+           given={Iqra},
+           giveni={I\bibinitperiod}}}%
+        {{hash=ed3825c36cc7c10c638a396c6f09c172}{%
+           family={Khara},
+           familyi={K\bibinitperiod},
+           given={Sibaram},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{fd4b2aa7323ddda98996269da19840e2}
+      \strng{fullhash}{fd4b2aa7323ddda98996269da19840e2}
+      \strng{bibnamehash}{fd4b2aa7323ddda98996269da19840e2}
+      \strng{authorbibnamehash}{fd4b2aa7323ddda98996269da19840e2}
+      \strng{authornamehash}{fd4b2aa7323ddda98996269da19840e2}
+      \strng{authorfullhash}{fd4b2aa7323ddda98996269da19840e2}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2022 International Conference on Computing, Communication, and Intelligent Systems (ICCCIS)}
+      \field{title}{5G Network: Architecture, Protocols, Challenges and Opportunities}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+    \endentry
+    \entry{Ji2018Overview}{article}{}
+      \name{author}{11}{}{%
+        {{hash=ec7d2a594508149d51925b3de49e1b9c}{%
+           family={Ji},
+           familyi={J\bibinitperiod},
+           given={Xinsheng},
+           giveni={X\bibinitperiod}}}%
+        {{hash=19292c05eca8ae2558cf08e7726417f9}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Kaizhi},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a33cc72699f005fa9d67757ece7f6400}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=73f6c61ce26c7055c2e981aff50dd1ed}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Hongbo},
+           giveni={H\bibinitperiod}}}%
+        {{hash=089cab8ac048fe8e585101e8f8657099}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Caixia},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ce8e487e1ba0d628fefe94ec325f18b6}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Zhou},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=6325801adb2c2706b71a870b4ebfecf0}{%
+           family={You},
+           familyi={Y\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f1ffac4793252d9ad2eb868b01f9351d}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaoming},
+           giveni={X\bibinitperiod}}}%
+        {{hash=84ba0e5e9f29a0d0cbbe8e1e1c5eb489}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Hua},
+           giveni={H\bibinitperiod}}}%
+        {{hash=79f5a8421ed50efcd8129cf080b83c23}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jiangxing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=51c7f59ccd7718e2bc00adbcbd8d7639}{%
+           family={Yi},
+           familyi={Y\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2485208f61d445befd05bc2171c36073}
+      \strng{fullhash}{bb2803b188a43db0b75d30764169104e}
+      \strng{bibnamehash}{2485208f61d445befd05bc2171c36073}
+      \strng{authorbibnamehash}{2485208f61d445befd05bc2171c36073}
+      \strng{authornamehash}{2485208f61d445befd05bc2171c36073}
+      \strng{authorfullhash}{bb2803b188a43db0b75d30764169104e}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science China Information Sciences}
+      \field{title}{Overview of 5G security technology}
+      \field{volume}{61}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1007/s11432-017-9426-4
+      \endverb
+    \endentry
+    \entry{Jover2018Security}{article}{}
+      \name{author}{2}{}{%
+        {{hash=28f001465509cc6579a264d12a0fe500}{%
+           family={Jover},
+           familyi={J\bibinitperiod},
+           given={Roger\bibnamedelima Piqueras},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=8ee7928b4c0457093b3055a04882df22}{%
+           family={Marojevic},
+           familyi={M\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{3a874cfa7a7095a27d60871b1c4d6909}
+      \strng{fullhash}{3a874cfa7a7095a27d60871b1c4d6909}
+      \strng{bibnamehash}{3a874cfa7a7095a27d60871b1c4d6909}
+      \strng{authorbibnamehash}{3a874cfa7a7095a27d60871b1c4d6909}
+      \strng{authornamehash}{3a874cfa7a7095a27d60871b1c4d6909}
+      \strng{authorfullhash}{3a874cfa7a7095a27d60871b1c4d6909}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Security and Protocol Exploit Analysis of the 5G Specifications}
+      \field{volume}{7}
+      \field{year}{2018}
+      \field{pages}{24956\bibrangedash 24963}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2019.2899254
+      \endverb
+    \endentry
+    \entry{Kathavate2021Critical}{article}{}
+      \name{author}{4}{}{%
+        {{hash=2c6c7872bb408ac7a187cbf226972b2f}{%
+           family={Kathavate},
+           familyi={K\bibinitperiod},
+           given={Akash\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=0956d741ad2402a4072980a45b7ec68c}{%
+           family={Priya},
+           familyi={P\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0e8381d353547f7dc0a613bf90307225}{%
+           family={Hegde},
+           familyi={H\bibinitperiod},
+           given={Rajeshwari},
+           giveni={R\bibinitperiod}}}%
+        {{hash=bd3008397ad826a53bd6acb6e4eafea9}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Sharath},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{04d4de42f9fe8a4bc89e88cd9bec7329}
+      \strng{fullhash}{cb3bb7b9ea46f7332f9b6c610d192da7}
+      \strng{bibnamehash}{04d4de42f9fe8a4bc89e88cd9bec7329}
+      \strng{authorbibnamehash}{04d4de42f9fe8a4bc89e88cd9bec7329}
+      \strng{authornamehash}{04d4de42f9fe8a4bc89e88cd9bec7329}
+      \strng{authorfullhash}{cb3bb7b9ea46f7332f9b6c610d192da7}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Asian Journal of Advanced Research and Reports}
+      \field{title}{Critical Aspects of 5G Technology- A Study on the Drivers, Technology Enhancement, Performance, and Spectrum Usage}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.9734/ajarr/2021/v15i530396
+      \endverb
+    \endentry
+    \entry{Kim20205G}{article}{}
+      \name{author}{1}{}{%
+        {{hash=646394d773707aa8f7491a3ec87ca851}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hwankuk},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{646394d773707aa8f7491a3ec87ca851}
+      \strng{fullhash}{646394d773707aa8f7491a3ec87ca851}
+      \strng{bibnamehash}{646394d773707aa8f7491a3ec87ca851}
+      \strng{authorbibnamehash}{646394d773707aa8f7491a3ec87ca851}
+      \strng{authornamehash}{646394d773707aa8f7491a3ec87ca851}
+      \strng{authorfullhash}{646394d773707aa8f7491a3ec87ca851}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Internet Serv. Inf. Secur.}
+      \field{title}{5G core network security issues and attack classification from network protocol perspective}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 15}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.22667/JISIS.2020.05.31.001
+      \endverb
+    \endentry
+    \entry{mohan2022cyber}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=6a075f1103166657c8692e30f80b416a}{%
+           family={Mohan},
+           familyi={M\bibinitperiod},
+           given={Jaya\bibnamedelima Preethi},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=16bace7a51f28b36c728e0af877c3855}{%
+           family={Sugunaraj},
+           familyi={S\bibinitperiod},
+           given={Niroop},
+           giveni={N\bibinitperiod}}}%
+        {{hash=2ab951d43eed143244c7491ab7282f52}{%
+           family={Ranganathan},
+           familyi={R\bibinitperiod},
+           given={Prakash},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{7ad248cad767e32340303f2d2cf2a2f5}
+      \strng{fullhash}{7ad248cad767e32340303f2d2cf2a2f5}
+      \strng{bibnamehash}{7ad248cad767e32340303f2d2cf2a2f5}
+      \strng{authorbibnamehash}{7ad248cad767e32340303f2d2cf2a2f5}
+      \strng{authornamehash}{7ad248cad767e32340303f2d2cf2a2f5}
+      \strng{authorfullhash}{7ad248cad767e32340303f2d2cf2a2f5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2022 IEEE international conference on electro information technology (eIT)}
+      \field{title}{Cyber security threats for 5G networks}
+      \field{year}{2022}
+      \field{pages}{446\bibrangedash 454}
+      \range{pages}{9}
+    \endentry
+    \entry{Park20215G}{article}{}
+      \name{author}{6}{}{%
+        {{hash=cf7fa506be91ea95ded2fc48953ce282}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Seongmin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=194b6bec4e4dbeacc6f052f3a6d55caf}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Daeun},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f6a4f8860ed9c7b2d16e054ce9ef371f}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Youngkwon},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=fd718b60295279e6b82ace3dbc8ec396}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={HyungJin},
+           giveni={H\bibinitperiod}}}%
+        {{hash=729dcf6c46164a31ae409de44fe7245d}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Dowon},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c64cdec19812690a41ddcf00d2caee12}{%
+           family={Kwon},
+           familyi={K\bibinitperiod},
+           given={Sungmoon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf24502c4d6445a96bca7bfb460a1224}
+      \strng{fullhash}{a5406774c02909744e57d3d3afb71a6e}
+      \strng{bibnamehash}{cf24502c4d6445a96bca7bfb460a1224}
+      \strng{authorbibnamehash}{cf24502c4d6445a96bca7bfb460a1224}
+      \strng{authornamehash}{cf24502c4d6445a96bca7bfb460a1224}
+      \strng{authorfullhash}{a5406774c02909744e57d3d3afb71a6e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors (Basel, Switzerland)}
+      \field{title}{5G Security Threat Assessment in Real Networks}
+      \field{volume}{21}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.3390/s21165524
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
