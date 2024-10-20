@@ -1,17 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
-[1] Config.pm:310> INFO - Logfile is 'essay_template.blg'
-[337] biber-MSWIN64:340> INFO - === 
-[399] Biber.pm:419> INFO - Reading 'essay_template.bcf'
-[819] Biber.pm:979> INFO - Found 9 citekeys in bib section 0
-[844] Biber.pm:4419> INFO - Processing section 0
-[864] Biber.pm:4610> INFO - Looking for bibtex file 'bib.bib' for section 0
-[935] bibtex.pm:1713> INFO - LaTeX decoding ...
-[976] bibtex.pm:1519> INFO - Found BibTeX data source 'bib.bib'
-[1223] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1224] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1225] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[1225] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[1255] bbl.pm:660> INFO - Writing 'essay_template.bbl' with encoding 'UTF-8'
-[1277] bbl.pm:763> INFO - Output to essay_template.bbl
-[1278] Biber.pm:131> WARN - Duplicate entry key: 'Kathavate2021Critical' in file 'bib.bib', skipping ...
-[1278] Biber.pm:133> INFO - WARNINGS: 1
+[0] Config.pm:310> INFO - Logfile is 'essay_template.blg'
+[185] biber-MSWIN64:340> INFO - === 
+[241] Biber.pm:419> INFO - Reading 'essay_template.bcf'
+[408] Biber.pm:979> INFO - Found 9 citekeys in bib section 0
+[431] Biber.pm:4419> INFO - Processing section 0
+[450] Biber.pm:4610> INFO - Looking for bibtex file 'bib.bib' for section 0
+[520] bibtex.pm:1713> INFO - LaTeX decoding ...
+[549] bibtex.pm:1519> INFO - Found BibTeX data source 'bib.bib'
+[696] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[696] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[696] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[696] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[710] bbl.pm:660> INFO - Writing 'essay_template.bbl' with encoding 'UTF-8'
+[721] bbl.pm:763> INFO - Output to essay_template.bbl
+[721] Biber.pm:131> WARN - Duplicate entry key: 'Kathavate2021Critical' in file 'bib.bib', skipping ...
+[722] Biber.pm:133> INFO - WARNINGS: 1

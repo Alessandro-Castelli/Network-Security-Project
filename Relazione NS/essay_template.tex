@@ -115,8 +115,8 @@ quindi, di un sistema che sta rivoluzionando il modo in cui immaginiamo
 internet, non più solo come uno scambio di dati tra persone, ma come
 un'integrazione massiccia tra esseri umani e macchine, e tra macchine stesse.
 
-E qui entrano in gioco i tre scenari fondamentali del 5G:\@ \textbf{eMBB, mMTC
-	e uRLLC}. Ognuno di questi rappresenta una sfaccettatura dell'intera visione
+E qui entrano in gioco i tre scenari fondamentali del 5G:\@ \textbf{eMBB, mMTC 
+e uRLLC}. Ognuno di questi rappresenta una sfaccettatura dell'intera visione
 del 5G~\cite{Ji2018Overview}: \textbf{eMBB} è pensato per una banda larga
 mobile potenziata, consentendo download rapidissimi e streaming ad altissima
 qualità; \textbf{mMTC} è rivolto alla comunicazione massiva tra macchine,
@@ -124,15 +124,17 @@ essenziale per supportare l’IoT (Internet of Things); \textbf{uRLLC} invece è
 cruciale per applicazioni che richiedono una latenza minima e un'affidabilità
 estrema, come la telechirurgia o i veicoli autonomi. Ma quali sono le
 tecnologie che effettivamente rendono possibile tutto questo?
-
+\\
+\sloppy
 Il 3GPP ha definito più di 70 tipi di file 5G SA1 necessari a questo scopo, e
 le tecnologie chiave sviluppate per il 5G includono:
-\textbf{\hyperlink{MIMO}{Massive MIMO}}, \textbf{\hyperlink{FBMC}{filter bank
-		based multicarrier (FBMC)}}, \textbf{\hyperlink{FullDuplex}{Full Duplex}},
-\textbf{\hyperlink{UDN}{Ultra Dense networking (UDN)}},
-\textbf{\hyperlink{SDN}{software-defined networking (SDN)}} e
-\textbf{\hyperlink{NFV}{network function virtualization
-		(NFV)}}~\cite{Ji2018Overview}.
+\textit{\hyperlink{MIMO}{Massive MIMO}},
+\textit{\hyperlink{FBMC}{filter bank based multicarrier (FBMC)}},
+\textit{\hyperlink{FullDuplex}{Full Duplex}},
+\textit{\hyperlink{UDN}{Ultra Dense networking (UDN)}},
+\textit{\hyperlink{SDN}{software-defined networking (SDN)}} 
+e
+\textit{\hyperlink{NFV}{network function virtualization (NFV)}}~\cite{Ji2018Overview}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \section{Threat model}
 In letteratura sono state identificate numerose sfide legate alla sicurezza del
@@ -153,7 +155,7 @@ vantaggi significativi in termini di flessibilità e scalabilità. Tuttavia,
 queste tecnologie espongono anche la rete a nuovi rischi di sicurezza, come
 l'esaurimento delle risorse e vulnerabilità nelle interfacce di programmazione,
 che possono diventare obiettivi per attacchi mirati. Inoltre, il
-\textit{\hyperlink{MIMO}{Massive Multiple-Input Multiple-Output}} (MIMO) e le
+\textit{\hyperlink{MIMO}{Massive Multiple-Input Multiple-Output (MIMO)}} e le
 \textit{\hyperlink{mmWave}{comunicazioni a onde millimetriche (mmWave)}}
 aumentano la capacità delle reti, ma devono affrontare problemi di sicurezza
 legati alla gestione delle risorse e alla segretezza delle informazioni. Anche
@@ -308,8 +310,8 @@ essa (per vedere come vengono generate le chiavi guarda 13).
 
 Il 3GPP ha introdotto l'\texttt{Extensible Authentication Protocol (EAP)} per
 l'Autenticazione e l'Accordo delle Chiavi, definendo
-l'\texttt{\hyperlink{EAP-AKA}{EAP-AKA}} e il \texttt{\hyperlink{5G AKA}{5G
-		AKA}} come metodi obbligatori di autenticazione per i dispositivi (UE) e la
+l'\texttt{\hyperlink{EAP-AKA}{EAP-AKA}} e il \texttt{\hyperlink{5G AKA}{5G AKA}} 
+come metodi obbligatori di autenticazione per i dispositivi (UE) e la
 rete. Questi protocolli garantiscono un'autenticazione reciproca tra il
 dispositivo e la rete, oltre a proteggere la sicurezza e la cifratura dei
 servizi. Durante la registrazione, un dispositivo 5G invia il **SUCI** per
@@ -593,17 +595,13 @@ principali:
 
 %--------------------------------------------------------------------------
 \section{Conclusions}
-
-Ecco una versione migliorata del tuo testo:
-
 La tecnologia 5G rappresenta una delle ultime frontiere nel campo delle
 comunicazioni senza fili. Essa ha il potenziale di rivoluzionare molte attività
 umane e il nostro modo di concepire le comunicazioni moderne, grazie a elevate
 velocità di trasmissione, bassa latenza e un alto throughput. Tuttavia, con
 l'avanzamento della tecnologia mobile, si sviluppano anche nuove minacce che
 possono compromettere la sicurezza di queste reti.
-
-In questo articolo, vengono analizzate le principali vulnerabilità associate al
+In questo articolo, sono state analizzate le principali vulnerabilità associate al
 5G. Molte di queste vulnerabilità sono ereditate dal 4G, mentre altre sono
 completamente nuove. La ricerca sulla sicurezza e l'identificazione di
 soluzioni innovative rappresentano un compito cruciale per tutti gli attori
@@ -611,7 +609,8 @@ coinvolti, dai fornitori di servizi di rete a coloro che definiscono i
 protocolli di comunicazione. Questo diventa particolarmente necessario,
 considerando che il 5G è sempre più fondamentale per settori della vita
 quotidiana che possono diventare estremamente delicati se non gestiti
-correttamente, come la telemedicina e i veicoli a guida autonoma.\appendix
+correttamente, come la telemedicina e i veicoli a guida autonoma.
+\appendix
 \section{Termini da ricordare}
 \begin{itemize}
 	\item \textbf{\hypertarget{bandalargaMobile}{Banda Larga Mobile}}: La caratteristica principale
