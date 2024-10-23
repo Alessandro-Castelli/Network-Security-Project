@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.13)  20 OCT 2024 10:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.13)  23 OCT 2024 12:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -515,28 +515,34 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [2
 
-] [3] [4] [5] [6]
-Underfull \hbox (badness 3209) in paragraph at lines 304--310
+] [3] [4] [5] [6] [7]
+Underfull \hbox (badness 3209) in paragraph at lines 308--314
 []\OT1/cmr/m/n/10 Le pro-ce-dure di si-curezza del 5G si basano su un frame-work a
  []
 
 
-Underfull \hbox (badness 3954) in paragraph at lines 304--310
+Underfull \hbox (badness 3954) in paragraph at lines 308--314
 \OT1/cmr/m/n/10 derivazione ger-ar-chica. La chi-ave a lungo ter-mine \OT1/cmtt/m/n/10 K \OT1/cmr/m/n/10 ^^Re con-ser-vata
  []
 
 
-Underfull \hbox (badness 3701) in paragraph at lines 304--310
+Underfull \hbox (badness 3701) in paragraph at lines 308--314
 \OT1/cmr/m/n/10 dalla \OT1/cmtt/m/n/10 Authentication Credential Repository and Processing Function
  []
 
-[7] [8] [9] [10] [11] [12] [13]
-<./images/ATTACCHI.png, id=231, 601.0455pt x 426.99525pt>
+[8] [9] [10] [11] [12] [13] [14] [15] [16]
+<./images/ATTACCHI.png, id=260, 601.0455pt x 426.99525pt>
 File: ./images/ATTACCHI.png Graphic file (type png)
 <use ./images/ATTACCHI.png>
-Package pdftex.def Info: ./images/ATTACCHI.png  used on input line 590.
+Package pdftex.def Info: ./images/ATTACCHI.png  used on input line 744.
 (pdftex.def)             Requested size: 345.0pt x 245.09686pt.
- [14 <./images/ATTACCHI.png>] [15] [16] [17] [18] [19
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17] [18 <./images/ATTACCHI.png>] [19] [20
+
+] [21] [22] [23] [24
 
 ] (essay_template.aux)
  ***********
@@ -544,23 +550,23 @@ LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-08>
  ***********
 Package rerunfilecheck Info: File `essay_template.out' has not changed.
-(rerunfilecheck)             Checksum: 9B6459C1C69E5C8AA81D403C1D809DBA;3414.
+(rerunfilecheck)             Checksum: 9A1C6D07A517119575C1B5650B501795;3542.
 Package logreq Info: Writing requests to 'essay_template.run.xml'.
 \openout1 = `essay_template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17466 strings out of 474491
- 309173 string characters out of 5754620
- 1939473 words of memory out of 5000000
- 39506 multiletter control sequences out of 15000+600000
+ 17479 strings out of 474491
+ 309292 string characters out of 5754620
+ 1940473 words of memory out of 5000000
+ 39511 multiletter control sequences out of 15000+600000
  564081 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,6n,81p,750b,1819s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ales2\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on essay_template.pdf (19 pages, 342615 bytes).
+Output written on essay_template.pdf (24 pages, 359781 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 150 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 381 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
+ 158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

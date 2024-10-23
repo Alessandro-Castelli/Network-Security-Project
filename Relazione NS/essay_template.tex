@@ -29,7 +29,7 @@
 \begin{document}
 
 \maketitle
-5
+
 \begin{abstract}
 	Negli ultimi decenni, le comunicazioni wireless hanno subito una rapida
 	evoluzione, alimentata dalla crescente domanda degli utenti per connessioni
@@ -115,28 +115,37 @@ quindi, di un sistema che sta rivoluzionando il modo in cui immaginiamo
 internet, non più solo come uno scambio di dati tra persone, ma come
 un'integrazione massiccia tra esseri umani e macchine, e tra macchine stesse.
 
-E qui entrano in gioco i tre scenari fondamentali del 5G:\@ \textbf{eMBB, mMTC 
-e uRLLC}. Ognuno di questi rappresenta una sfaccettatura dell'intera visione
+E qui entrano in gioco i tre scenari fondamentali del 5G:\@ \textbf{eMBB, mMTC
+	e uRLLC}. Ognuno di questi rappresenta una sfaccettatura dell'intera visione
 del 5G~\cite{Ji2018Overview}: \textbf{eMBB} è pensato per una banda larga
 mobile potenziata, consentendo download rapidissimi e streaming ad altissima
 qualità; \textbf{mMTC} è rivolto alla comunicazione massiva tra macchine,
 essenziale per supportare l’IoT (Internet of Things); \textbf{uRLLC} invece è
 cruciale per applicazioni che richiedono una latenza minima e un'affidabilità
 estrema, come la telechirurgia o i veicoli autonomi. Ma quali sono le
-tecnologie che effettivamente rendono possibile tutto questo?
-\\
-\sloppy
-Il 3GPP ha definito più di 70 tipi di file 5G SA1 necessari a questo scopo, e
-le tecnologie chiave sviluppate per il 5G includono:
-\textit{\hyperlink{MIMO}{Massive MIMO}},
-\textit{\hyperlink{FBMC}{filter bank based multicarrier (FBMC)}},
-\textit{\hyperlink{FullDuplex}{Full Duplex}},
+tecnologie che effettivamente rendono possibile tutto questo? \\ \sloppy Il
+3GPP ha definito più di 70 tipi di file 5G SA1 necessari a questo scopo, e le
+tecnologie chiave sviluppate per il 5G includono:
+\textit{\hyperlink{MIMO}{Massive MIMO}}, \textit{\hyperlink{FBMC}{filter bank
+		based multicarrier (FBMC)}}, \textit{\hyperlink{FullDuplex}{Full Duplex}},
 \textit{\hyperlink{UDN}{Ultra Dense networking (UDN)}},
-\textit{\hyperlink{SDN}{software-defined networking (SDN)}} 
-e
-\textit{\hyperlink{NFV}{network function virtualization (NFV)}}~\cite{Ji2018Overview}.
+\textit{\hyperlink{SDN}{software-defined networking (SDN)}} e
+\textit{\hyperlink{NFV}{network function virtualization
+		(NFV)}}~\cite{Ji2018Overview}. \\ In questo articolo verrà presentato uno
+studio approfondito sulla sicurezza all'interno delle reti 5G. Nella
+Sezione~\ref{sec:ThreatModel} si esamineranno gli asset, gli attaccanti e i
+rischi associati a una rete 5G. La Sezione~\ref{sec:SecurityGoal} illustrerà
+gli obiettivi di sicurezza che si intendono raggiungere per gli asset
+identificati. Nella Sezione~\ref{sec:4} verranno analizzati i servizi di
+sicurezza implementati all'interno di questa tecnologia. Infine, nella
+Sezione~\ref{sec:5 } si discuteranno le potenziali vulnerabilità presenti. Per
+mantenere il testo chiaro e conciso, evitando complicazioni eccessive e
+approfondimenti frequenti sulle diverse tecnologie e vulnerabilità, alla fine
+del documento è stato inserito un glossario. Questo glossario fornisce
+spiegazioni sui protocolli, sulle sigle e su altri termini pertinenti,
+facilitando così la comprensione del contenuto.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\section{Threat model}
+\section{Threat model}\label{sec:ThreatModel}
 In letteratura sono state identificate numerose sfide legate alla sicurezza del
 5G. Gli asset principali coinvolti includono i dati sensibili degli utenti,
 come informazioni personali e dati di navigazione, che transitano attraverso la
@@ -216,19 +225,17 @@ dedicata non solo alle tecnologie e ai protocolli di sicurezza, ma anche alla
 formazione continua del personale e alla consapevolezza degli utenti finali
 riguardo ai rischi e alle migliori pratiche per la sicurezza.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Security goals}
-Describe the security goals that we aim to achieve on the identified assets,
-according to the CIAAA model. \\ Ogni sistema di comunicazione affinchè sa
-considerato sicuro ha bisogno di protocolli e tecnolgie di protezioneche
-proteggano le risorse usate la comunizazione in modo tale da garantire che i
-dati rispettino le proprietà di: \textbf{Riservatezza}, \textbf{Integrità},
-\textbf{Disponibilità}, \textbf{Autenticità,
-	\textbf{Accountability}}~\cite{mohan2022cyber}. \\ Questi obiettivi sono
-essenziali per garantire che le reti 5G possano operare in modo sicuro e
-affidabile, proteggendo i dati e le comunicazioni degli utenti. \\ Iniziamo con
-la Riservatezza. Questo obiettivo mira a garantire che solo gli utenti
-autorizzati possano accedere alle informazioni sensibili. Nelle reti 5G, dove
-la quantità di dati trasmessi è enorme e include informazioni personali e
+\section{Security goals}\label{sec:SecurityGoal}
+Ogni sistema di comunicazione affinchè sia considerato sicuro ha bisogno di
+protocolli e tecnolgie di protezione che proteggano le risorse usate la
+comunizazione in modo tale da garantire che i dati rispettino le proprietà di:
+\textbf{Riservatezza}, \textbf{Integrità}, \textbf{Disponibilità},
+\textbf{Autenticità, \textbf{Accountability}}~\cite{mohan2022cyber}. \\ Questi
+obiettivi sono essenziali per garantire che le reti 5G possano operare in modo
+sicuro e affidabile, proteggendo i dati e le comunicazioni degli utenti. \\
+Iniziamo con la Riservatezza. Questo obiettivo mira a garantire che solo gli
+utenti autorizzati possano accedere alle informazioni sensibili. Nelle reti 5G,
+dove la quantità di dati trasmessi è enorme e include informazioni personali e
 aziendali, è cruciale implementare misure di crittografia e autenticazione
 robusta. La riservatezza non è solo una questione di protezione dei dati, ma
 anche di fiducia degli utenti nel sistema. Se gli utenti percepiscono che i
@@ -263,10 +270,7 @@ in un contesto 5G richiede un approccio olistico che integri tecnologie
 avanzate, politiche di sicurezza rigorose e una continua vigilanza per
 affrontare le minacce emergenti.
 %--------------------------------------------------------------------------------
-\section{Security service and implementation}
-Describe the security services to be implemented, and how these are
-implemented: protocols, algorithms, procedures, etc.
-
+\section{Security service and implementation}\label{sec:4}
 L'architettura del 5G è organizzata attraverso 3 strati: uno strato applicatvo,
 uno strato di servizio e uno strato di trasporto~\cite{Jover2018Security}. Ogni
 strato è progettato con specifiche funzionalità di sicurezza che, combinate tra
@@ -310,22 +314,22 @@ essa (per vedere come vengono generate le chiavi guarda 13).
 
 Il 3GPP ha introdotto l'\texttt{Extensible Authentication Protocol (EAP)} per
 l'Autenticazione e l'Accordo delle Chiavi, definendo
-l'\texttt{\hyperlink{EAP-AKA}{EAP-AKA}} e il \texttt{\hyperlink{5G AKA}{5G AKA}} 
-come metodi obbligatori di autenticazione per i dispositivi (UE) e la
+l'\texttt{\hyperlink{EAP-AKA}{EAP-AKA}} e il \texttt{\hyperlink{5G AKA}{5G
+		AKA}} come metodi obbligatori di autenticazione per i dispositivi (UE) e la
 rete. Questi protocolli garantiscono un'autenticazione reciproca tra il
 dispositivo e la rete, oltre a proteggere la sicurezza e la cifratura dei
-servizi. Durante la registrazione, un dispositivo 5G invia il **SUCI** per
-avviare il processo di autenticazione basato sul protocollo selezionato.
+servizi. Durante la registrazione, un dispositivo 5G invia il SUCI per avviare
+il processo di autenticazione basato sul protocollo selezionato.
 
 Le specifiche di sicurezza del 5G definiscono vari contesti di sicurezza per
 diverse situazioni: per una singola rete di servizio 5G (SN), tra più SN e tra
 reti 5G e 4G. Quando un dispositivo è connesso a due SN, ciascuna rete deve
 gestire e utilizzare autonomamente un proprio contesto di sicurezza. Nel caso
 in cui il dispositivo sia registrato su due SN all'interno della stessa rete
-pubblica mobile terrestre (PLMN), che siano 3GPP o non-3GPP, il dispositivo
-stabilisce due connessioni NAS (Non-Access Stratum) separate per ciascuna rete,
-ma condivide un contesto di sicurezza NAS comune, che include un unico insieme
-di chiavi e algoritmi di sicurezza.
+pubblica mobile terrestre (\hyperlink{PLMN}{PLMN}), che siano 3GPP o non-3GPP,
+il dispositivo stabilisce due connessioni NAS (Non-Access Stratum) separate per
+ciascuna rete, ma condivide un contesto di sicurezza NAS comune, che include un
+unico insieme di chiavi e algoritmi di sicurezza.
 
 Le procedure per mantenere o scartare un contesto di sicurezza durante la
 transizione di stato dicano che la configurazione della tipologia di handover è
@@ -346,23 +350,25 @@ sicurezza del dispositivo stesso.
 
 Nel controllo delle risorse radio, l'integrità e la riservatezza vengono
 garantite dal livello PDCP (Packet Data Convergence Protocol) che opera tra il
-dispositivo e il gNB.\@ È importante notare che nessun livello al di sotto del
-PDCP è soggetto a protezione dell'integrità. La protezione contro gli attacchi
-di replay è attivata quando la protezione dell'integrità è in funzione, tranne
-nel caso in cui sia selezionata la protezione dell'integrità nulla. I controlli
-di integrità RRC vengono effettuati sia sul dispositivo che sul gNB, e se un
-controllo di integrità fallisce dopo che la protezione è stata attivata, il
-messaggio corrispondente viene immediatamente scartato.
+dispositivo e il \hyperlink{gNB}{gNB}.\@ È importante notare che nessun livello
+al di sotto del PDCP è soggetto a protezione dell'integrità. La protezione
+contro gli attacchi di replay è attivata quando la protezione dell'integrità è
+in funzione, tranne nel caso in cui sia selezionata la protezione
+dell'integrità nulla. I controlli di integrità RRC vengono effettuati sia sul
+dispositivo che sul \hyperlink{gNB}{gNB}, e se un controllo di integrità
+fallisce dopo che la protezione è stata attivata, il messaggio corrispondente
+viene immediatamente scartato.
 
 Passando al piano utente, la funzione di gestione delle sessioni (SMF) si
 occupa di fornire la politica di sicurezza per una sessione PDU (Protocol Data
-Unit) al gNB durante la fase di stabilimento della sessione. Se la protezione
-dell'integrità non è attivata per i portatori radio di dati (DRB), né il gNB né
-il dispositivo saranno in grado di proteggere l'integrità del traffico di tali
-DRB.\@ Allo stesso modo, se la cifratura del piano utente non è attivata per i
-DRB, il traffico non verrà cifrato. La SMF locale ha la possibilità di
-sovrascrivere l'opzione di riservatezza presente nella politica di sicurezza
-del piano utente ricevuta dalla SMF della rete di origine (HN).
+Unit) al \hyperlink{gNB}{gNB} durante la fase di stabilimento della sessione.
+Se la protezione dell'integrità non è attivata per i portatori radio di dati
+(DRB), né il \hyperlink{gNB}{gNB} né il dispositivo saranno in grado di
+proteggere l'integrità del traffico di tali DRB.\@ Allo stesso modo, se la
+cifratura del piano utente non è attivata per i DRB, il traffico non verrà
+cifrato. La SMF locale ha la possibilità di sovrascrivere l'opzione di
+riservatezza presente nella politica di sicurezza del piano utente ricevuta
+dalla SMF della rete di origine (HN).
 
 Infine, per quanto riguarda la privacy dello ID di abbonamento, il SUCI
 rappresenta la versione nascosta dell'identificatore di abbonamento permanente
@@ -379,7 +385,8 @@ SUCI.\@ Il 5G-GUTI deve essere riassegnato in base ai trigger del dispositivo,
 ma la frequenza di tale riassegnazione è lasciata alla discrezione
 dell'implementazione della rete.
 
-\section{Attacks and Vulnerabilities}
+\section{Attacks and Vulnerabilities}\label{sec:5
+}
 
 \subsection{5G NSA}
 Il \textbf{5G Non-Standalone (NSA)} è un'architettura transitoria che sfrutta
@@ -420,16 +427,17 @@ Le minacce alla sicurezza del Radio Access Network (RAN) si concentrano sulle
 vulnerabilità della parte radio della rete, che include le stazioni base e i
 dispositivi mobili. \\[0.2cm]
 \textbf{Fuga di informazioni}:
-Le minacce includono lo sniffing del \texttt{paging} e la decodifica
-dell'\texttt{\hyperlink{IMSI}{IMSI}}.\@
-Il \texttt{paging} è un processo utilizzato per inviare notifiche ai dispositivi mobili
-riguardo chiamate, messaggi o altre comunicazioni. Le stazioni base trasmettono questi
-messaggi in broadcast, consentendo ai dispositivi di rispondere e stabilire una connessione.
-L'\texttt{\hyperlink{IMSI}{IMSI}} è un identificatore unico per un abbonato,
-fondamentale per l'autenticazione nella rete.
-Lo sniffing del paging consente a un attaccante
-di intercettare i messaggi di paging e ottenere l'\texttt{\hyperlink{IMSI}{IMSI}} dell'utente,
-utilizzando dispositivi come il Software Defined Radio (SDR).
+La perdita di informazioni può comprendere minacce come l'intercettazione del paging e
+il cracking dell'\texttt{\hyperlink{IMSI}{IMSI}}.
+L'intercettazione del paging è una tecnica di scansione passiva
+che sfrutta i messaggi di paging inviati dalle stazioni base ai terminali mobili.
+Un attaccante, utilizzando un \texttt{\hyperlink{SDR}{dispositivo SDR}} (software-defined radio),
+può captare i segnali RF nelle vicinanze della vittima e rilevare l'identità temporanea del
+sottoscrittore mobile (\hyperlink{S-TMSI}{S-TMSI}) o il ciclo di paging. Sfruttando queste informazioni,
+l'attaccante può calcolare l'indice del frame di paging (PFI),
+limitando a soli 8 i possibili candidati IMSI della vittima.
+Successivamente, invia un paging IMSI con questi 8 candidati e
+osserva le risposte per individuare l'IMSI reale della vittima.
 \\[0.2cm]
 \textbf{Denial of Service (DoS) per l'utente:} Questo tipo di attacco include varie forme,
 come il DoS alla connessione \texttt{\hyperlink{RRC}{RRC}} (Radio Resource Control),
@@ -448,19 +456,32 @@ che può poi continuare a inviare richieste per impedire l'accesso legittimo al 
 \\[0.2cm]
 \textbf{DoS della stazione base:} Un attacco DoS può anche mirare a esaurire le risorse
 della stazione base, rendendo difficile per gli utenti legittimi connettersi.
-Quando un terminale cerca di stabilire una connessione, utilizza il protocollo RRC,
+Quando un terminale cerca di stabilire una connessione, utilizza il protocollo \texttt{\hyperlink{RRC}{RRC}},
 che prevede un processo di accesso casuale. Gli attaccanti possono sfruttare questo
 processo per inviare richieste non autorizzate, aumentando il numero di connessioni
-RRC attive e sovraccaricando la stazione base, causando ritardi o interruzioni nei servizi.
+\texttt{\hyperlink{RRC}{RRC}} attive e sovraccaricando la stazione base, causando ritardi o interruzioni nei servizi.
 \\[0.2cm]
-\textbf{Eavesdropping:} Sebbene le impostazioni di sicurezza AS dovrebbero prevenire
-l'intercettazione, ci sono circostanze in cui ciò può avvenire. Il traffico vocale è
-gestito tramite il protocollo \hyperlink{RTP}{RTP},
-e il bearer vocale, a differenza dei bearer dati,è dedicato e garantisce la qualità del servizio.
-Tuttavia, se un attaccante riesce a
-registrare la comunicazione vocale cifrata e poi effettua una chiamata utilizzando lo
-stesso ID del bearer, può estrarre il keystream necessario per decodificare le
-comunicazioni precedenti.
+\textbf{Eavesdropping:} In teoria, l'intercettazione delle reti wireless dovrebbe essere impossibile
+grazie alle impostazioni di sicurezza AS tra terminali e stazioni base. Tuttavia, esistono casi in
+cui è possibile estrarre il flusso di chiavi di sicurezza AS e decifrare le comunicazioni.
+Il traffico vocale nelle comunicazioni mobili utilizza il protocollo RTP (Real-time Transport Protocol)
+ed è trasmesso tramite un bearer vocale, distinto dal bearer dati. Per garantire la qualità del servizio
+(QoS), il bearer vocale è dedicato, con un identificatore di classe QoS (QCI) separato.
+Durante la creazione del flusso di chiavi per la cifratura nella procedura di sicurezza AS,
+sono utilizzati quattro parametri: conteggio, direzione, lunghezza e ID del bearer.
+Di questi, solo l'ID del bearer (ID DRB) rappresenta una variabile critica.
+L'ID DRB viene assegnato quando la stazione base crea un bearer vocale,
+ma alcune stazioni base di determinati produttori possono assegnare lo stesso ID DRB
+all'interno della stessa connessione RRC, creando una vulnerabilità.
+Un attaccante può sfruttare questa falla intercettando la comunicazione vocale
+cifrata della vittima tramite uno sniffer. Dopo che la chiamata è terminata,
+l'attaccante può effettuare una chiamata vocale verso la vittima, intercettando sia la chiamata
+in chiaro che quella cifrata. Applicando l'operazione XOR tra il testo in chiaro e quello cifrato
+della seconda chiamata, l'attaccante è in grado di estrarre il flusso di chiavi,
+che può essere utilizzato per decifrare la prima chiamata, poiché entrambe hanno utilizzato
+lo stesso ID DRB e si sono svolte nella stessa connessione RRC. Per evitare questo tipo di attacco,
+lo standard 3GPP TS 33.401 raccomanda di utilizzare ID DRB diversi per i vari bearer,
+prevenendo così il riutilizzo dello stesso ID DRB nella stazione base.
 \\[0.2cm]
 \textbf{Utilizzo non autorizzato dei dati:} Nelle reti mobili esistono bearer predefiniti
 e dedicati, progettati per comunicazioni legittime. Un attaccante può sfruttare questi
@@ -470,34 +491,167 @@ noto anche come caller spoofing, è un attacco in cui l'attaccante falsifica l'i
 del chiamante, ingannando la vittima.
 
 \subsubsection{Core Network Security Threats}
-\textbf{Fuga di informazioni:} Le reti core 5G NSA possono essere suddivise in dispositivi
-EPC per l'elaborazione dei dati e dispositivi IMS per i servizi.
-Gli attaccanti possono colpire il protocollo GTP tra i dispositivi EPC o il protocollo SIP
-nei dispositivi IMS, in base alle informazioni che desiderano ottenere. Una tecnica comune
-è l'iniezione di pacchetti GTP-C per estrarre informazioni IP dai dispositivi EPC.\@
-\\
+\textbf{Fuga di informazioni:}
+Le informazioni relative alle reti core 5G NSA possono essere essenzialmente
+classificate in due categorie: quelle riguardanti l'equipaggiamento EPC (Evolved Packet Core),
+dedicato all'elaborazione dei dati, e quelle concernenti l'equipaggiamento IMS (IP Multimedia Subsystem),
+che fornisce vari servizi. Poiché l'equipaggiamento EPC utilizza il protocollo
+GTP (GPRS Tunneling Protocol) per le comunicazioni,
+mentre l'equipaggiamento IMS si basa sul protocollo SIP (Session Initiation Protocol),
+un attaccante ha la possibilità di scegliere il protocollo più appropriato per accedere
+alle informazioni desiderate.
+Il protocollo GTP si distingue in due componenti: GTP-C,
+impiegato per la comunicazione tra le attrezzature della rete core, e GTP-U,
+responsabile del trasporto del traffico dati dal terminale utente attraverso
+un tunnel tra la stazione base e il PGW (Packet Gateway). Per estrarre informazioni
+sull'indirizzo IP dell'equipaggiamento EPC, l'attaccante può ricorrere a un metodo di
+iniezione di pacchetti, caricando nel payload dei dati una richiesta di eco (echo request)
+insieme a un messaggio GTP-C per il controllo dello stato di salute delle attrezzature di rete.
+Utilizzando un programma denominato Packit, è possibile eseguire il comando
+Android Debug Bridge (ADB) nel terminale Android, generando così un pacchetto.
+Inviando questo pacchetto all'indirizzo IP ottenuto tramite il comando Tracert in modalità tethering,
+il pacchetto GTP-C viene iniettato e trasmesso alla rete di comunicazione mobile.
+Il PGW, una volta ricevuto il pacchetto, lo verifica e invia una risposta di eco,
+consentendo all'attaccante di identificare l'IP sorgente di quel messaggio come PGWIP.
+\\[0.2cm]
 \textbf{Esaurimento degli indirizzi IP:} Utilizzando la tecnica GTP-in-GTP, un attaccante
 può esaurire il pool di indirizzi IP della rete inviando richieste di sessione con numeri
 di terminale incrementati, impedendo così ai terminali legittimi di connettersi.
-\\
+\\[0.2cm]
 \textbf{Denial of Service (DoS):} Un attacco DoS può essere eseguito inviando ripetutamente
 messaggi di richiesta di connessione alla rete 5G NSA, sovraccaricando il core di rete e
 causando l'interruzione del servizio.
-\\
+\\[0.2cm]
 \textbf{Manipolazione del NAS:} I messaggi del protocollo NAS, utilizzati per la segnalazione
 tra terminali e core di rete, non sempre sono protetti da cifratura. Un attaccante può
 sfruttare questa vulnerabilità installando una stazione base malevola per manipolare i
 messaggi e alterare i parametri critici per la cifratura e l'integrità dei dati.
-\\
-\textbf{Intercettazione:} Le comunicazioni vocali nelle reti 5G utilizzano la rete IMS e
-il protocollo SIP.\@ Se l'attaccante riesce a disabilitare la cifratura IPSec nel terminale
-della vittima, può intercettare il traffico vocale non criptato attraverso attacchi di
-tipo man-in-the-middle (MitM).
-\\
+\\[0.2cm]
+\textbf{Intercettazione:} La comunicazione vocale su una rete 5G sfrutta la rete IMS e
+avvia le sessioni tramite il protocollo SIP, seguendo le direttive stabilite dallo standard 3GPP.
+Di conseguenza, la sicurezza del protocollo SIP è cruciale e viene principalmente garantita attraverso
+le associazioni di sicurezza (SA) dell'IPSec. Tuttavia, l'implementazione di IPSec SA è
+gestita in modo selettivo dagli operatori delle reti 5G, e il supporto per il VoLTE (Voice over LTE)
+non implica necessariamente una copertura totale dell'IPSec,
+a causa dell'impatto significativo che potrebbe avere sulle prestazioni del terminale.
+Prendiamo ad esempio il Samsung Galaxy S10,
+che supporta IPSec, ma presenta un problema: l'impostazione relativa può essere disattivata tramite
+un menu nascosto. Se un attaccante riesce a ottenere l'accesso remoto a questo menu nascosto e
+modifica l'impostazione di IPSec, le comunicazioni vocali della vittima avverranno senza cifratura.
+Inoltre, se il campo EEA viene alterato mediante una manipolazione del NAS (Non-Access Stratum)
+e non viene utilizzato un algoritmo di cifratura NAS, anche la comunicazione wireless nella
+sezione AS (Access Stratum) risulterà non cifrata. In tale scenario, l'attaccante può intercettare
+il traffico wireless utilizzando un attacco man-in-the-middle (MitM), permettendogli di ascoltare
+il traffico vocale della vittima privo di cifratura.
+\\[0.2cm]
 \textbf{Spoofing:} Lo spoofing di IP è un attacco comune in cui l'attaccante invia pacchetti
 con indirizzi IP falsificati, causando problemi di fatturazione e potenziali attacchi DoS.
 Inoltre, lo spoofing del campo \texttt{from} nei pacchetti SIP o MMS può essere utilizzato
 per il voice phishing, presentando numeri falsificati sul terminale ricevente.
+\subsubsection{Contromisure}
+Esistono diverse modalità di risposta a queste minacce. Tuttavia, possiamo
+considerare le contromisure contro le minacce alla sicurezza del 5G su due
+livelli: la standardizzazione delle linee guida sulla sicurezza e la
+rilevazione tramite sistemi di rilevamento delle intrusioni (IDS) o sistemi di
+prevenzione delle intrusioni (IPS). \\[0.2cm]
+\textbf{Contromisure tramite Standardizzazione}
+La Denial of Service (DoS) da RRC (RRC connection DoS).
+La causa principale della minaccia di DoS da connessione RRC è che la richiesta
+di connessione RRC, un messaggio trasmesso quando un terminale utente accede alla rete,
+è inviata in chiaro e include il TMSI, un'informazione identificativa
+temporanea del terminale utente. Per affrontare questo problema, è necessario verificare
+la falsificazione dei messaggi RRC a livello di stazione base, un aspetto non facilmente
+definibile in 3GPP.\@ Inoltre, impedire agli attaccanti di scoprire l'informazione
+identificativa temporanea di un utente specifico può essere una strategia di verifica,
+ma non è semplice poiché esistono molteplici metodi conosciuti. Utilizzare informazioni
+identificative temporanee nella richiesta di connessione RRC serve a prevenire invasioni
+della privacy dovute a perdite e abusi dell'IMSI, che è l'informazione identificativa
+dell'abbonato all'interno del USIM.\@ Tuttavia, gli attaccanti possono intercettare i
+messaggi di richiesta di connessione RRC inviati in chiaro e identificare facilmente il TMSI.\@
+Questo consente all'attaccante di creare e trasmettere un messaggio di richiesta di connessione
+RRC modulato, facendolo apparire come se fosse stato inviato dal terminale vittima.
+Nella rete centrale, le informazioni identificative temporanee vengono generate a intervalli
+di tempo specifici in base a regole prestabilite basate sull'IMSI. Anche se il TMSI cambia,
+l'attaccante può identificare il nuovo TMSI e generare nuovamente un messaggio d'attacco.
+Quando la stazione base riceve la richiesta di connessione RRC modulata, annulla la connessione
+al terminale esistente della vittima senza controllare lo stato della modulazione e consente
+l'accesso al terminale dell'attaccante. In tale situazione, se la stazione base non disconnette
+il terminale della vittima o mantiene la connessione per un certo periodo, può ridurre la
+minaccia di DoS per la vittima. Poiché il terminale dell'attaccante non riesce a autenticarsi
+dopo la connessione RRC, mantenere la connessione con il terminale esistente solo durante
+il periodo in cui il terminale dell'attaccante invia la richiesta di connessione RRC e
+l'autenticazione fallisce potrebbe non influenzare significativamente le prestazioni della stazione base.
+
+Le contromisure sopra indicate sono questioni di implementazione a livello di
+stazione base e la loro integrazione nel 3GPP. D'altro canto, sarebbe più
+praticabile presentare le contromisure pertinenti come linee guida di sicurezza
+per le stazioni base 5G e proporle come standard internazionali correlati, come
+quelli dell'ITU-T. In futuro, la standardizzazione pertinente sarà promossa
+affinché gli operatori mobili che offrono servizi 5G possano utilizzare le
+contromisure come guida di riferimento per migliorare la loro sicurezza. \\[0.2cm]
+Manipolazione NAS (spoofing di cifratura NAS): Lo standard 5G di 3GPP supporta
+sia la verifica dell'integrità che la comunicazione cifrata per rafforzare la
+sicurezza del protocollo NAS tra terminali e reti core 5G. Tuttavia, poiché la
+comunicazione cifrata è una funzione opzionale e non obbligatoria tra le
+funzioni di sicurezza del protocollo NAS, ci sono casi in cui alcune funzioni
+di sicurezza non vengono utilizzate in base alla politica del paese o
+dell'operatore mobile. Oltre alle chiamate di emergenza,
+alcuni paesi o operatori potrebbero non utilizzare le capacità di cifratura
+fornite dagli standard 5G in termini di sicurezza. Inoltre, lo standard 5G non
+definisce l'autenticazione obbligatoria reciproca tra terminali (UE) e reti 5G né la
+funzione di verifica dell'integrità dei messaggi iniziali scambiati prima della
+cifratura, basandosi su un'affidabilità sottostante che presuppone che i
+messaggi iniziali non siano stati modulati. Questo problema deriva da una
+vulnerabilità che non conferma la falsificazione del primo messaggio di
+richiesta di accesso (attach request) inviato alla rete 5G dal terminale UE.\@
+
+Un attaccante malintenzionato si infiltra tra il terminale UE della vittima e
+la stazione base, manipola un messaggio di richiesta di accesso includendo una
+richiesta di cifratura e verifica dell'integrità normalmente inviata dal
+terminale, trasformandolo in un messaggio di richiesta di accesso senza
+cifratura e senza verifica dell'integrità, e lo invia a una stazione base
+normale. L'equipaggiamento della rete core 5G (MME) stabilisce un canale non
+cifrato con l'UE in base alla richiesta di disabilitazione della cifratura, che
+è un messaggio manipolato diverso dall'originale inviato dall'UE, anche se
+l'attivazione della cifratura è predefinita. Questo problema si verifica perché
+lo standard 3GPP non incorpora una procedura di autenticazione dell'integrità
+per verificare la falsificazione del messaggio iniziale prima della fase di
+autenticazione reciproca, risultando in una comunicazione non cifrata causata
+da messaggi UE manipolati e privi di verifica dell'integrità.
+
+Da questa situazione possono derivare due minacce. La prima è la manipolazione
+del contenuto del messaggio. Esistono vulnerabilità o rischi in cui attaccanti
+malintenzionati possono modulare i messaggi inviati dal terminale della vittima
+a loro piacimento. Questo avviene perché lo standard non definisce alcuna
+procedura di verifica dell'integrità per controllare se il messaggio di
+richiesta di accesso inviato da un terminale durante il primo accesso alla rete
+di comunicazione sia stato manipolato o meno. La seconda minaccia è
+l'intercettazione delle comunicazioni. A causa di una richiesta di
+disabilitazione della cifratura all'interno del messaggio di accesso iniziale
+modulato, la comunicazione tra il terminale e la rete 5G si stabilirà come un
+canale non cifrato, consentendo a un attaccante malintenzionato di intercettare
+tutte le comunicazioni wireless e di esporre informazioni personali e
+informazioni sulla posizione contenute nei messaggi scambiati.
+
+Un attaccante può disabilitare le impostazioni di cifratura tra il terminale
+della vittima e la rete core utilizzando una stazione base falsa per sfruttare
+i dati della vittima o intercettare il contenuto del messaggio. Nella studio
+\texttt{5G Security Threat Assessment in Real Networks}~\cite{Park20215G} è
+stato implementato un algoritmo per rilevare questo problema e condotto test di
+prestazioni di rilevamento. \\[0.2cm]
+\textbf{Intercettazione (spoofing SIP)}: Le intercettazioni legate allo spoofing SIP
+possono verificarsi quando l'IPSec è disabilitato. Pertanto, è essenziale che le 
+impostazioni per la cifratura delle comunicazioni vocali tra i terminali e la rete 
+5G siano gestite dall'operatore mobile, piuttosto che tramite le funzionalità del 
+terminale stesso (è necessaria un'applicazione selettiva della rete per i terminali 
+che non supportano IPSec). Qualora le impostazioni IPSec del servizio vocale 5G siano 
+determinate dalle caratteristiche del terminale, gli utenti malevoli potrebbero tentare 
+vari attacchi sfruttando le configurazioni dei propri dispositivi. Inoltre, 
+è importante sensibilizzare l'opinione pubblica riguardo ai rischi di esposizione 
+dei dettagli comunicativi quando gli attaccanti manipolano messaggi in modo dannoso e 
+realizzano comunicazioni non cifrate tra il terminale e la rete 5G. La sezione pertinente 
+a IPSec è definita come politica locale nel 3GPP, ma è necessario esaminare la possibilità 
+di renderla obbligatoria a livello di standard 3GPP.
 
 \subsection{Attacchi alle reti 5G SA}
 Le minacce alla sicurezza del 5G SA classificate da ENISA sono anche in questo
@@ -600,23 +754,34 @@ comunicazioni senza fili. Essa ha il potenziale di rivoluzionare molte attività
 umane e il nostro modo di concepire le comunicazioni moderne, grazie a elevate
 velocità di trasmissione, bassa latenza e un alto throughput. Tuttavia, con
 l'avanzamento della tecnologia mobile, si sviluppano anche nuove minacce che
-possono compromettere la sicurezza di queste reti.
-In questo articolo, sono state analizzate le principali vulnerabilità associate al
-5G. Molte di queste vulnerabilità sono ereditate dal 4G, mentre altre sono
-completamente nuove. La ricerca sulla sicurezza e l'identificazione di
-soluzioni innovative rappresentano un compito cruciale per tutti gli attori
-coinvolti, dai fornitori di servizi di rete a coloro che definiscono i
-protocolli di comunicazione. Questo diventa particolarmente necessario,
-considerando che il 5G è sempre più fondamentale per settori della vita
-quotidiana che possono diventare estremamente delicati se non gestiti
-correttamente, come la telemedicina e i veicoli a guida autonoma.
-\appendix
+possono compromettere la sicurezza di queste reti. In questo articolo, sono
+state analizzate le principali vulnerabilità associate al 5G. Molte di queste
+vulnerabilità sono ereditate dal 4G, mentre altre sono completamente nuove. La
+ricerca sulla sicurezza e l'identificazione di soluzioni innovative
+rappresentano un compito cruciale per tutti gli attori coinvolti, dai fornitori
+di servizi di rete a coloro che definiscono i protocolli di comunicazione.
+Questo diventa particolarmente necessario, considerando che il 5G è sempre più
+fondamentale per settori della vita quotidiana che possono diventare
+estremamente delicati se non gestiti correttamente, come la telemedicina e i
+veicoli a guida autonoma. L’evoluzione della cybersecurity nel contesto del 5G
+non è solo una risposta alle minacce esistenti, ma anche una sfida per
+prevedere e mitigare rischi futuri, considerando la crescente interconnessione
+globale. Tecnologie chiave come l'intelligenza artificiale e il machine
+learning offrono un potenziale significativo per migliorare la protezione delle
+reti, identificando in tempo reale minacce sofisticate e attacchi su larga
+scala. Inoltre, la crittografia deve evolversi per far fronte a nuove forme di
+attacco, inclusi quelli che potrebbero emergere dall’uso di computer
+quantistici. Guardando al futuro, è chiaro che la sicurezza del 5G diventerà un
+aspetto sempre più centrale, soprattutto con l'incremento dei dispositivi IoT
+connessi e l’utilizzo del 5G in infrastrutture critiche. Senza una protezione
+adeguata, le conseguenze potrebbero essere devastanti, mettendo a rischio non
+solo la privacy degli utenti, ma anche la stabilità dei sistemi economici e
+sociali. La cooperazione internazionale, lo sviluppo di nuove tecnologie e la
+definizione di standard sempre più stringenti saranno essenziali per garantire
+che il 5G sia non solo un motore di progresso, ma anche una piattaforma sicura
+per le generazioni future. \clearpage \appendix
 \section{Termini da ricordare}
 \begin{itemize}
-	\item \textbf{\hypertarget{bandalargaMobile}{Banda Larga Mobile}}: La caratteristica principale
-	      della banda larga mobile è la possibilità di fornire accesso a Internet in modalità wireless,
-	      senza essere limitati a una connessione fissa, come quella via cavo o fibra ottica.
-
 	\item \textbf{\hypertarget{MIMO}{Massive MIMO}}: I sistemi wireless Multiple Input Multiple Output
 	      sfruttano più antenne di trasmissione e ricezione per aumentare la capacità di rete,
 	      migliorando il throughput dei dati e servendo un maggior numero di utenti. MIMO suddivide
@@ -641,30 +806,30 @@ correttamente, come la telemedicina e i veicoli a guida autonoma.
 	      le mmWave sono cruciali per migliorare la capacità delle
 	      reti in aree ad alta densità di utenti.
 
-	\item \textbf{\hypertarget{EAP-AKA}{EAP-AKA}}: è un protocollo di autenticazione
-	      progettato per consentire l'autenticazione sicura tra un dispositivo mobile e una rete,
-	      basato sul concetto di chiavi simmetriche.
-	      Quando un dispositivo, desidera connettersi a una rete,
-	      invia una richiesta di autenticazione utilizzando un \texttt{SUCI},
-	      una versione cifrata del suo identificatore permanente, il \texttt{SUPI},
-	      consentendo alla rete di identificare il dispositivo senza rivelare
-	      l’identità reale dell’utente e garantendo la sua privacy.
-	      La rete, ricevuta la richiesta, utilizza il SUCI per accedere alle credenziali
-	      memorizzate nel database dell’\texttt{ARPF}, dove è custodita la chiave segreta \texttt{K},
-	      condivisa tra il dispositivo e la rete; se viene scelto il protocollo \texttt{EAP-AKA},
-	      la rete avvia il processo di autenticazione generando una \texttt{sfida}
-	      per il dispositivo composta da tre elementi: un numero casuale \texttt{(RAND)},
-	      un messaggio di autenticazione \texttt{(AUTN)} e la risposta attesa \texttt{(XRES)}, che vengono
-	      inviati al dispositivo. Questo verifica il valore \texttt{AUTN} utilizzando la chiave \texttt{K} nella sua \texttt{USIM},
-	      e, se l'\texttt{AUTN} è valido, calcola una risposta \texttt{(RES)} basata su \texttt{RAND} e la chiave \texttt{K},
-	      quindi la invia alla rete, che confronta la \texttt{RES} ricevuta con la \texttt{XRES} generata in precedenza;
-	      se corrispondono, l’autenticazione ha successo e entrambe le parti hanno verificato
-	      l'identità reciproca. Successivamente, si genera la chiave di sessione,
-	      derivata dalla chiave \texttt{K} e dai materiali generati nella sfida,
-	      con chiavi come \texttt{CK} (per la cifratura dei dati) e \texttt{IK} (per l’integrità dei messaggi),
-	      essenziali per proteggere le comunicazioni. Una volta completato il processo di
-	      autenticazione e derivate le chiavi di sessione, il dispositivo e la rete possono
-	      iniziare a scambiare dati in modo sicuro, sapendo che le comunicazioni sono protette
+	\item \textbf{\hypertarget{EAP-AKA}{EAP-AKA}}: è un protocollo di autenticazione progettato
+	      per consentire l'autenticazione sicura tra un dispositivo mobile e una rete, basato
+	      sul concetto di chiavi simmetriche. Quando un dispositivo, desidera connettersi a
+	      una rete, invia una richiesta di autenticazione utilizzando un \texttt{SUCI},
+	      una versione cifrata del suo identificatore permanente, il \texttt{SUPI}, consentendo
+	      alla rete di identificare il dispositivo senza rivelare l’identità reale dell’utente
+	      e garantendo la sua privacy. La rete, ricevuta la richiesta, utilizza il SUCI per
+	      accedere alle credenziali memorizzate nel database dell’\texttt{ARPF}, dove è custodita
+	      la chiave segreta \texttt{K}, condivisa tra il dispositivo e la rete; se viene scelto
+	      il protocollo \texttt{EAP-AKA}, la rete avvia il processo di autenticazione generando
+	      una \texttt{sfida} per il dispositivo composta da tre elementi: un numero casuale
+	      \texttt{(RAND)}, un messaggio di autenticazione \texttt{(AUTN)} e la risposta attesa
+	      \texttt{(XRES)}, che vengono inviati al dispositivo. Questo verifica il valore
+	      \texttt{AUTN} utilizzando la chiave \texttt{K} nella sua \texttt{USIM}, e, se
+	      l'\texttt{AUTN} è valido, calcola una risposta \texttt{(RES)} basata su \texttt{RAND}
+	      e la chiave \texttt{K}, quindi la invia alla rete, che confronta la \texttt{RES}
+	      ricevuta con la \texttt{XRES} generata in precedenza; se corrispondono,
+	      l’autenticazione ha successo e entrambe le parti hanno verificato l'identità reciproca.
+	      Successivamente, si genera la chiave di sessione, derivata dalla chiave \texttt{K}
+	      e dai materiali generati nella sfida, con chiavi come \texttt{CK}
+	      (per la cifratura dei dati) e \texttt{IK} (per l’integrità dei messaggi), essenziali
+	      per proteggere le comunicazioni. Una volta completato il processo di autenticazione
+	      e derivate le chiavi di sessione, il dispositivo e la rete possono iniziare a scambiare
+	      dati in modo sicuro, sapendo che le comunicazioni sono protette
 	      da solide misure di sicurezza.
 
 	\item \textbf{\hypertarget{5G AKA}{5G AKA}}: Il processo \texttt{5G AKA} inizia con l'invio,
@@ -686,6 +851,11 @@ correttamente, come la telemedicina e i veicoli a guida autonoma.
 	      grazie alla separazione delle chiavi di cifratura e integrità e a meccanismi più robusti
 	      per prevenire attacchi di tracciamento e correlazione delle identità,
 	      migliorando significativamente la sicurezza rispetto alle generazioni precedenti.\@
+
+	\item \textbf{\hypertarget{PLMN}{PLMN (Public Land Mobile Network)}}:
+	      È una rete mobile pubblica terrestre. Un PLMN è una rete mobile che fornisce servizi di
+	      comunicazione mobile al pubblico. Ogni operatore mobile ha il proprio PLMN identificato
+	      da un codice univoco, che consente ai dispositivi di identificare e connettersi a quella rete.
 
 	\item \textbf{FBMC}\hypertarget{FBMC}{}: Il Filter Bank Multicarrier (FBMC) è una tecnica di
 	      modulazione che divide un segnale in più sottocanali, applicando filtri per ridurre
@@ -754,20 +924,29 @@ correttamente, come la telemedicina e i veicoli a guida autonoma.
 	      il codice dell'operatore \texttt{(MNC)}
 	      e un numero identificativo dell'abbbonato \texttt{(MSIN)}.
 
+	\item \hypertarget{SDR}{SDR}: Un dispositivo SDR (Software-Defined Radio)
+	      è una radio in cui gran parte delle operazioni di elaborazione del segnale,
+	      come modulazione e demodulazione, viene eseguita tramite software anziché hardware fisso.
+	      Questo permette di adattare il dispositivo a diverse frequenze e protocolli radio
+	      semplicemente aggiornando il software, rendendolo estremamente flessibile e versatile
+	      per applicazioni come telecomunicazioni, ricerca e analisi di sicurezza.
+
 	\item \textbf{\hypertarget{RTP}{RTP}}: Il Real-time Transport Protocol (RTP) è un protocollo
 	      di rete utilizzato per la trasmissione di dati in tempo reale, come voce e video, su reti IP.\@
 
-	\item \textbf{\hypertarget{NAS}{NAS}}: Gestisce la comunicazione tra il dispositivo dell'utente e il core network,
-	      occupandosi di autenticazione e registrazione,
-	      assicurando che solo i dispositivi autorizzati accedano alla rete.
-	      Inoltre, si occupa della mobilità, consentendo agli utenti di passare da una
-	      cella all'altra senza interruzioni. Gestisce anche le sessioni di dati,
-	      stabilendo e terminando le connessioni e mantenendo la qualità del servizio.
+	\item \textbf{\hypertarget{GTP}{GTP}}: è un protocollo è routing. Il suo scopo è quello di trasportare dati tra
+	      diversi nodi rete in maniera efficiente.
 
-	\item \textbf{\hypertarget{MME}{MME}}: L'Mobility Management Entity (MME)
-	      è un componente software nel core network delle reti mobili 4G e 5G, responsabile della
-	      gestione della mobilità degli utenti e della segnalazione.
-	      Svolge funzioni chiave come l'autenticazione degli utenti, la gestione delle sessioni,
+	\item \textbf{\hypertarget{NAS}{NAS}}: Gestisce la comunicazione tra il dispositivo dell'utente e il
+	      core network, occupandosi di autenticazione e registrazione, assicurando che solo i dispositivi
+	      autorizzati accedano alla rete. Inoltre, si occupa della mobilità, consentendo agli utenti di
+	      passare da una cella all'altra senza interruzioni. Gestisce anche le sessioni di dati, stabilendo
+	      e terminando le connessioni e mantenendo la qualità del servizio.
+
+	\item \textbf{\hypertarget{MME}{MME}}: L'Mobility Management Entity (MME) è un componente software nel
+	      core network delle reti mobili 4G e 5G, responsabile della gestione della mobilità degli utenti
+	      e della segnalazione. Svolge funzioni chiave come l'autenticazione degli utenti, la gestione
+	      delle sessioni,
 	      il monitoraggio della posizione e l'instradamento delle richieste di servizio verso
 	      altre entità di rete. L'MME comunica con dispositivi terminali e altri elementi
 	      della rete utilizzando protocolli come NAS (Non Access Stratum) e
