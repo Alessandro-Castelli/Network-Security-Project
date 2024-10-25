@@ -60,7 +60,7 @@
 
 \tableofcontents
 \newpage
-\section{Introduzione}
+\section{Introduction}
 The history of mobile communication is a journey of continuous innovation. It
 all began with 1G~\cite{dangi2021study} in the 1970s and 1980s when data
 transmission was analog. It was the beginning, but with significant
@@ -395,7 +395,7 @@ ensuring that the data complies with the properties of:
 
 These objectives are essential to ensure that 5G networks can operate securely
 and reliably, protecting users' data and communications. Let’s start with
-Confidentiality. This objective aims to ensure that only authorized users can
+\textbf{Confidentiality}. This objective aims to ensure that only authorized users can
 access sensitive information. In 5G networks, where the volume of transmitted
 data is enormous and includes personal and business information, it is crucial
 to implement robust encryption and authentication measures. Confidentiality is
@@ -413,7 +413,7 @@ the services offered.
 % percepiscono che i loro dati non sono al sicuro, potrebbero essere riluttanti a
 % utilizzare i servizi offerti.
 
-Moving on to Integrity, this objective focuses on protecting data from
+Moving on to \textbf{Integrity}, this objective focuses on protecting data from
 unauthorized modifications. In a 5G environment, where IoT devices and critical
 applications are increasingly interconnected, it is essential to ensure that
 information remains accurate and is not altered during transmission.
@@ -1052,7 +1052,7 @@ of the base station.\\[0.2cm]
 % la connessione con il terminale esistente solo durante il periodo in cui il
 % terminale dell'aggressore invia la richiesta di connessione RRC e l'autenticazione
 % fallisce potrebbe non influenzare significativamente le prestazioni della stazione base.
-
+\\
 \textbf{NAS Manipulation (NAS Encryption Spoofing)}. \\
 The 5G standard from 3GPP supports both integrity verification and encrypted
 communication to strengthen the security of the NAS protocol between terminals
@@ -1145,7 +1145,7 @@ they are non-standard terminals.
 % centrali, è possibile impostare canali di bypass della cifratura o determinare
 % se si tratta di terminali non standard. 
 % \\[0.2cm]
-
+\\[0.2cm]
 \textbf{Interception (SIP spoofing).}\\
 Since interception caused by SIP spoofing is possible when IPSec is disabled,
 it is necessary to ensure that the encryption settings for voice communication
@@ -1728,7 +1728,7 @@ generations.
 	      %       il codice dell'operatore \texttt{(MNC)}
 	      %       e un numero identificativo dell'abbbonato \texttt{(MSIN)}.
 
-	\item \hypertarget{SDR}{SDR}:
+	\item \textbf{\hypertarget{SDR}{SDR}}:
 	      A Software-Defined Radio (SDR) device is a radio where most of the signal processing operations,
 	      such as modulation and demodulation, are performed via software instead of fixed hardware.
 	      This allows the device to adapt to different frequencies and radio protocols simply by
@@ -1741,7 +1741,7 @@ generations.
 	      %       semplicemente aggiornando il software, rendendolo estremamente flessibile e versatile
 	      %       per applicazioni come telecomunicazioni, ricerca e analisi di sicurezza.
 
-	\item \hypertarget{RTP}{RTP}:
+	\item \textbf{\hypertarget{RTP}{RTP}}:
 	      The RTP protocol is used for the transport of real-time multimedia data,
 	      such as audio and video, over IP networks, and is essential for applications
 	      like VoIP telephony and videoconferencing. RTP provides functionalities to
@@ -1777,7 +1777,7 @@ generations.
 	      %       è ottimizzato per minimizzare i ritardi e mantenere una qualità
 	      %       costante anche su reti non affidabili.
 
-	\item \hypertarget{GTP}{GTP}:
+	\item \textbf{\hypertarget{GTP}{GTP}}:
 	      GTP is a protocol used in mobile networks for the transport of data and signaling
 	      between network nodes. It is divided into two main components:
 	      \textbf{GTP-C} (Control Plane), which manages signaling and session control,
@@ -1806,7 +1806,7 @@ generations.
 	      %       essere sfruttate da attacchi, rendendo necessaria l'adozione di misure di
 	      %       sicurezza appropriate.
 
-	\item \hypertarget{NAS}{NAS}:
+	\item \textbf{\hypertarget{NAS}{NAS}}:
 	      It manages the communication between the user's device and the core network,
 	      handling authentication and registration to ensure that only authorized devices
 	      access the network. Additionally, it deals with mobility, allowing users to move from
@@ -1818,13 +1818,13 @@ generations.
 	      %       passare da una cella all'altra senza interruzioni. Gestisce anche le sessioni di dati, stabilendo
 	      %       e terminando le connessioni e mantenendo la qualità del servizio.
 
-	\item \hypertarget{MME}{MME}:
+	\item \textbf{\hypertarget{MME}{MME}}:
 	      The Mobility Management Entity (MME) is a software component in the core network of 4G
 	      and 5G mobile networks, responsible for managing user mobility and signaling.
 	      It performs key functions such as user authentication, session management, location tracking,
 	      and routing service requests to other network entities. The MME communicates with terminal
 	      devices and other network elements using protocols like NAS (Non Access Stratum) and GTP
-	      (GPRS Tunneling Protocol).
+	      (GPRS Tunneling Protocol). 
 	      % \item \textbf{\hypertarget{MME}{MME}}: L'Mobility Management Entity (MME) è un componente software nel
 	      %       core network delle reti mobili 4G e 5G, responsabile della gestione della mobilità degli utenti
 	      %       e della segnalazione. Svolge funzioni chiave come l'autenticazione degli utenti, la gestione
