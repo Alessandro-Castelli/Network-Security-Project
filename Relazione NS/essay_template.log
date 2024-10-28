@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.13)  25 OCT 2024 16:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.13)  28 OCT 2024 12:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -689,53 +689,47 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [2
 
-] [3] [4] [5] [6] [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 725--732
+] [3] [4] [5] [6] [7] [8] [9] [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 990--1088
 
  []
 
-[9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 929--937
+[12] [13] [14] [15] [16] [17] [18
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 938--948
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 993--1091
-
- []
-
-[12] [13] [14] [15] [16] [17
-
-] [18] [19] [20] [21] [22
+] [19] [20] [21] [22] [23
 
 ] (essay_template.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-08>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `essay_template.out' has not changed.
 (rerunfilecheck)             Checksum: 0EC93EB641B6AEFE79AF16C1B3096B03;2626.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                essay_template
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'essay_template.run.xml'.
 \openout1 = `essay_template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27276 strings out of 474491
- 523320 string characters out of 5754620
- 1939473 words of memory out of 5000000
- 49132 multiletter control sequences out of 15000+600000
+ 27281 strings out of 474491
+ 523471 string characters out of 5754620
+ 1942473 words of memory out of 5000000
+ 49135 multiletter control sequences out of 15000+600000
  564081 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,6n,93p,750b,1819s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ales2\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ales2/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on essay_template.pdf (22 pages, 270097 bytes).
+Output written on essay_template.pdf (23 pages, 276429 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
+ 371 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
  125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

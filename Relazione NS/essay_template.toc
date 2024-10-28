@@ -12,4 +12,4 @@
 \contentsline {subsubsection}{\numberline {5.4.2}Operator Responsibilities and Countermeasure}{15}{subsubsection.5.4.2}%
 \contentsline {subsection}{\numberline {5.5}Security Capabilities Bidding-Down Attack}{15}{subsection.5.5}%
 \contentsline {section}{\numberline {6}Conclusions}{16}{section.6}%
-\contentsline {section}{\numberline {A}Terms to Remember}{17}{appendix.A}%
+\contentsline {section}{\numberline {A}Terms to Remember}{18}{appendix.A}%

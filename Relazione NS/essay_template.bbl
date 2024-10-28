@@ -384,6 +384,57 @@
       \field{pages}{446\bibrangedash 454}
       \range{pages}{9}
     \endentry
+    \entry{Park20215G}{article}{}
+      \name{author}{6}{}{%
+        {{hash=cf7fa506be91ea95ded2fc48953ce282}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Seongmin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=194b6bec4e4dbeacc6f052f3a6d55caf}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Daeun},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f6a4f8860ed9c7b2d16e054ce9ef371f}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Youngkwon},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=fd718b60295279e6b82ace3dbc8ec396}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={HyungJin},
+           giveni={H\bibinitperiod}}}%
+        {{hash=729dcf6c46164a31ae409de44fe7245d}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Dowon},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c64cdec19812690a41ddcf00d2caee12}{%
+           family={Kwon},
+           familyi={K\bibinitperiod},
+           given={Sungmoon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf24502c4d6445a96bca7bfb460a1224}
+      \strng{fullhash}{a5406774c02909744e57d3d3afb71a6e}
+      \strng{bibnamehash}{cf24502c4d6445a96bca7bfb460a1224}
+      \strng{authorbibnamehash}{cf24502c4d6445a96bca7bfb460a1224}
+      \strng{authornamehash}{cf24502c4d6445a96bca7bfb460a1224}
+      \strng{authorfullhash}{a5406774c02909744e57d3d3afb71a6e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors (Basel, Switzerland)}
+      \field{title}{5G Security Threat Assessment in Real Networks}
+      \field{volume}{21}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.3390/s21165524
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

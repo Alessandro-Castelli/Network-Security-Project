@@ -128,7 +128,7 @@ connected and integrated into a global network.
 % of Everything, dove ogni aspetto della vita quotidiana è connesso e integrato
 % in una rete globale.
 
-Il \textbf{5G} thus represents the latest evolution in mobile communication
+\textbf{5G} thus represents the latest evolution in mobile communication
 technology, bringing significant improvements such as \textit{high bandwidth}
 and \textit{extremely low latency}. This technology supports advanced
 applications like augmented reality (AR), virtual reality (VR), and
@@ -395,13 +395,13 @@ ensuring that the data complies with the properties of:
 
 These objectives are essential to ensure that 5G networks can operate securely
 and reliably, protecting users' data and communications. Let’s start with
-\textbf{Confidentiality}. This objective aims to ensure that only authorized users can
-access sensitive information. In 5G networks, where the volume of transmitted
-data is enormous and includes personal and business information, it is crucial
-to implement robust encryption and authentication measures. Confidentiality is
-not just a matter of data protection, but also of users' trust in the system.
-If users perceive that their data is not secure, they may be reluctant to use
-the services offered.
+\textbf{Confidentiality}. This objective aims to ensure that only authorized
+users can access sensitive information. In 5G networks, where the volume of
+transmitted data is enormous and includes personal and business information, it
+is crucial to implement robust encryption and authentication measures.
+Confidentiality is not just a matter of data protection, but also of users'
+trust in the system. If users perceive that their data is not secure, they may
+be reluctant to use the services offered.
 % Questi obiettivi sono essenziali per garantire che le reti 5G possano operare
 % in modo sicuro e affidabile, proteggendo i dati e le comunicazioni degli
 % utenti. Iniziamo con la Riservatezza. Questo obiettivo mira a garantire che
@@ -704,9 +704,9 @@ vulnerabilities can manifest in both architectures; however, some may be more
 common or relevant in one than the other, depending on the specific
 implementations and technologies used. Below, some of the main vulnerabilities
 that can be easily exploited in attack contexts applicable to both NSA and SA
-networks will be illustrated. I will begin by examining the weaknesses that are
-more likely to occur in NSA architectures, before addressing more general
-vulnerabilities.
+networks will be illustrated \cite{Park20215G}. I will begin by examining the
+weaknesses that are more likely to occur in NSA architectures, before
+addressing more general vulnerabilities.
 % In questa sezione, verranno analizzate le vulnerabilità presenti nelle reti 5G,
 % tenendo conto delle differenze legate alle architetture utilizzate. Le reti 5G
 % possono essere suddivise in due categorie principali: il 5G Non-Standalone
@@ -724,12 +724,12 @@ vulnerabilities.
 \subsection{Threats to the Radio Access Network}
 Security threats to the Radio Access Network (RAN) focus on the vulnerabilities
 of the radio part of the network, which includes base stations and mobile
-devices. \\[0.2cm]
+devices.
+\\[0.2cm]
 % \subsection{Minacce al Radio Access Network}
 % Le minacce alla sicurezza del Radio Access Network (RAN) si concentrano sulle
 % vulnerabilità della parte radio della rete, che include le stazioni base e i
 % dispositivi mobili. \\[0.2cm]
-
 \textbf{Information Leakage}:
 Information loss can include threats such as the interception of
 paging and the cracking of \texttt{\hyperlink{IMSI}{IMSI}}. Paging
@@ -740,10 +740,10 @@ attacker, using a \texttt{\hyperlink{SDR}{SDR device}}
 of the victim and detect the temporary identity of the mobile
 subscriber (\hyperlink{S-TMSI}{S-TMSI}) or the paging cycle. By
 exploiting this information, the attacker can calculate the
-Paging Frame Index (PFI), limiting the possible IMSI candidates
+Paging Frame Index (PFI), limiting the possible \texttt{\hyperlink{IMSI}{IMSI}} candidates
 for the victim to only 8. Subsequently, the attacker sends an
-IMSI paging with these 8 candidates and observes the responses
-to identify the victim's actual IMSI.
+\texttt{\hyperlink{IMSI}{IMSI}} paging with these 8 candidates and observes the responses
+to identify the victim's actual \texttt{\hyperlink{IMSI}{IMSI}}.
 \\[0.2cm]
 % \textbf{Fuga di informazioni}:
 % La perdita di informazioni può comprendere minacce come l'intercettazione del
@@ -815,13 +815,13 @@ for encryption in the AS security procedure, four parameters are used:
 \texttt{count, direction, length, and bearer ID}. Of these, only the bearer
 ID (DRB ID) represents a critical variable. The DRB ID is assigned when the base
 station creates a voice bearer, but some base stations from certain manufacturers
-may assign the same DRB ID within the same RRC connection, creating a vulnerability.
+may assign the same DRB ID within the same \texttt{\hyperlink{RRC}{RRC}} connection, creating a vulnerability.
 An attacker can exploit this flaw by intercepting the victim's encrypted voice
 communication using a sniffer. After the call is over, the attacker can make a voice
 call to the victim, intercepting both the clear and the encrypted calls. By applying
 the XOR operation between the plaintext and ciphertext of the second call, the
 attacker can extract the key stream, which can be used to decrypt the first call
-since both used the same DRB ID and occurred in the same RRC connection.\@ To prevent
+since both used the same DRB ID and occurred in the same \texttt{\hyperlink{RRC}{RRC}} connection.\@ To prevent
 this type of attack, the 3GPP TS 33.401 standard recommends using different DRB IDs for
 various bearers, thus preventing the reuse of the same DRB ID in the base station.
 \\[0.2cm]
@@ -905,14 +905,14 @@ and sends an echo response, allowing the attacker to identify the source IP of t
 \textbf{IP Address Exhaustion:} By using the GTP-in-GTP technique, an attacker can exhaust
 the pool of IP addresses in the network by sending session requests with incremented terminal numbers,
 thereby preventing legitimate terminals from connecting. This technique exploits a vulnerability
-in the GTP (GPRS Tunneling Protocol), which is used for data transport in mobile networks.
-GTP-in-GTP involves encapsulating GTP packets within other GTP packets, allowing the attacker
-to send multiple requests in a single connection. The attacker creates GTP sessions within other
-GTP sessions, amplifying the attack and increasing the number of requests generated, thereby
+in the \hyperlink{GTP}{GTP} (GPRS Tunneling Protocol), which is used for data transport in mobile networks.
+GTP-in-GTP involves encapsulating \hyperlink{GTP}{GTP} packets within other \hyperlink{GTP}{GTP} packets, allowing the attacker
+to send multiple requests in a single connection. The attacker creates \hyperlink{GTP}{GTP} sessions within other
+\hyperlink{GTP}{GTP} sessions, amplifying the attack and increasing the number of requests generated, thereby
 accelerating the depletion of network resources. This technique proves particularly effective
-as it takes advantage of the overhead associated with managing GTP sessions, causing a strain
+as it takes advantage of the overhead associated with managing \hyperlink{GTP}{GTP} sessions, causing a strain
 on the IP address allocation system.\@
-[0.2cm]
+\\[0.2cm]
 % \textbf{Esaurimento degli indirizzi IP:} Utilizzando la tecnica GTP-in-GTP, un attaccante
 % può esaurire il pool di indirizzi IP della rete inviando richieste di sessione con numeri
 % di terminale incrementati, impedendo così ai terminali legittimi di connettersi.
@@ -925,7 +925,6 @@ on the IP address allocation system.\@
 % particolarmente efficace perché sfrutta l'overhead di gestione delle sessioni GTP,
 % causando un sovraccarico del sistema di allocazione degli indirizzi IP.\@
 % \\[0.2cm]
-
 \textbf{Denial of Service (DoS):} A DoS attack can be executed by repeatedly sending
 connection request messages to the 5G NSA network, overwhelming the core network and
 causing service disruption.
@@ -934,7 +933,6 @@ causing service disruption.
 % messaggi di richiesta di connessione alla rete 5G NSA, sovraccaricando il core di rete e
 % causando l'interruzione del servizio.
 % \\[0.2cm]
-
 \textbf{NAS Manipulation:} Messages from the NAS protocol, used for signaling between
 terminals and the core network, are not always protected by encryption. An attacker
 can exploit this vulnerability by installing a malicious base station to manipulate
@@ -945,7 +943,6 @@ messages and alter critical parameters for data encryption and integrity.
 % sfruttare questa vulnerabilità installando una stazione base malevola per manipolare i
 % messaggi e alterare i parametri critici per la cifratura e l'integrità dei dati.
 % \\[0.2cm]
-
 \textbf{Eavesdropping:} Voice communication over a 5G network utilizes the IMS
 network and initiates sessions via the SIP protocol, following the guidelines
 established by the 3GPP standard. Consequently, the security of the SIP protocol
@@ -994,27 +991,27 @@ We can consider an approach to countermeasures against security threats to 5G
 on two levels: the standardization of security guidelines and detection through
 intrusion detection systems or intrusion prevention systems. \\[0.2cm]
 \textbf{Denial of Service (DoS) of the RRC connection}.\@\\
-The main cause of the DoS threat on the RRC connection is that the RRC connection request,
+The main cause of the DoS threat on the \texttt{\hyperlink{RRC}{RRC}} connection is that the \texttt{\hyperlink{RRC}{RRC}} connection request,
 a message transmitted when a user terminal accesses the network, is sent in clear text,
 and the message includes the TMSI, a temporary identification information of the user terminal.
-To address this, it is necessary to verify the spoofing of RRC messages at the base station level,
+To address this, it is necessary to verify the spoofing of \texttt{\hyperlink{RRC}{RRC}} messages at the base station level,
 which is not easy to define in the 3GPP specifications.\@ Furthermore, blocking attackers from
 discovering the temporary identification information of a specific user can be a way to verify,
 but even this is not simple, as there are too many known methods. The use of temporary identification
-information in the RRC connection request serves to prevent privacy invasion caused by the leakage
-and abuse of the IMSI, which is the subscriber identification information within the USIM.
-However, attackers can intercept the clear text RRC connection request messages and easily
-identify the TMSI. From this, the attacker can create and send a modulated RRC connection
+information in the \texttt{\hyperlink{RRC}{RRC}} connection request serves to prevent privacy invasion caused by the leakage
+and abuse of the \texttt{\hyperlink{IMSI}{IMSI}}, which is the subscriber identification information within the USIM.
+However, attackers can intercept the clear text \texttt{\hyperlink{RRC}{RRC}} connection request messages and easily
+identify the TMSI. From this, the attacker can create and send a modulated \texttt{\hyperlink{RRC}{RRC}} connection
 request message so that the base station confuses the message with one sent from the victim's
 terminal. In the core network, the temporary identification information is created at specified
-time intervals according to specific rules based on the IMSI, and even if the TMSI is changed,
+time intervals according to specific rules based on the \texttt{\hyperlink{IMSI}{IMSI}}, and even if the TMSI is changed,
 the attacker can identify the changed TMSI and recreate an attack message. When receiving the
-modulated RRC connection request, the base stations disconnect the existing victim terminal
+modulated \texttt{\hyperlink{RRC}{RRC}} connection request, the base stations disconnect the existing victim terminal
 without verifying the modulation state and allow access to the attacker's terminal. In such
 a situation, if the base station does not disconnect the existing victim terminal or maintains
 the connection for a certain period of time, it can reduce the victim's DoS threat. Since the
-attacker's terminal fails authentication after the RRC connection, maintaining the connection
-with the existing terminal only during the period when the attacker's terminal sends the RRC
+attacker's terminal fails authentication after the \texttt{\hyperlink{RRC}{RRC}} connection, maintaining the connection
+with the existing terminal only during the period when the attacker's terminal sends the \texttt{\hyperlink{RRC}{RRC}}
 connection request and the authentication fails may not significantly affect the performance
 of the base station.\\[0.2cm]
 % \subsection{Contromisure}
@@ -1187,9 +1184,19 @@ Guidelines for the proper configuration and activation of the IPSec protocol in 
 The 5G-GUTI (Globally Unique Temporary Identifier) is a temporary identifier
 assigned to users to ensure their privacy. In some 5G SA (Standalone) networks,
 this identifier is reassigned in a random and unpredictable manner. The
-vulnerability lies in the fact that the command for GUTI reassignment is sent
-without security protection, either in terms of integrity or
-encryption~\cite{eleftherakis2024demystifying}. Attackers can exploit this
+vulnerability arises from the fact that the command for GUTI reassignment is
+typically transmitted in an encrypted manner to ensure security and user
+privacy, protecting sensitive information during communication. However, this
+vulnerability manifests when the command is sent without any protection, either
+regarding integrity or encryption. Such situations can occur due to inadequate
+implementations of 5G networks, where security measures have not been properly
+applied or where configuration errors exist. Additionally, unencrypted
+transmission may take place during network update phases or when establishing
+temporary connections, thereby exposing users to risks of interception and
+exploitation of their information.s or when establishing temporary connections,
+thereby exposing users to risks of interception and exploitation of their
+information.t is sent without security protection, either in terms of integrity
+or encryption~\cite{eleftherakis2024demystifying}. Attackers can exploit this
 vulnerability in various ways:
 \begin{itemize}
 	\item \textbf{Man-in-the-Middle (MiTM)}:
@@ -1252,17 +1259,17 @@ through encryption.
 % inviare questi messaggi garantendone l'integrità tramite crittografia.
 
 \subsection{Security Capabilities Bidding-Down Attack}
-The Bidding-Down Attack is a vulnerability that can manifest in certain
-implementations of 5G networks, particularly in non-standalone (NSA) and
-standalone (SA) networks of operators that do not correctly follow the security
-specifications defined by 3GPP, meaning they do not adequately verify the
-security capabilities supported by the User Equipment (UE) (i.e., they cannot
-distinguish between the security capabilities communicated in the initial
-registration request and those received in the NAS Security Mode Command (SMC)
-message). This attack exploits weaknesses in the security capabilities
-negotiation process between the user device (UE) and the network, with
-potential negative consequences for the confidentiality and integrity of
-transmitted data~\cite{eleftherakis2024demystifying}.
+The Bidding-Down Attack ~\cite{eleftherakis2024demystifying} is a vulnerability
+that can manifest in certain implementations of 5G networks, particularly in
+non-standalone (NSA) and standalone (SA) networks of operators that do not
+correctly follow the security specifications defined by 3GPP, meaning they do
+not adequately verify the security capabilities supported by the User Equipment
+(UE) (i.e., they cannot distinguish between the security capabilities
+communicated in the initial registration request and those received in the NAS
+Security Mode Command (SMC) message). This attack exploits weaknesses in the
+security capabilities negotiation process between the user device (UE) and the
+network, with potential negative consequences for the confidentiality and
+integrity of transmitted data~\cite{eleftherakis2024demystifying}.
 
 When a UE sends a registration request to the network, it communicates its
 security capabilities, specifying the supported encryption and integrity
@@ -1824,7 +1831,7 @@ generations.
 	      It performs key functions such as user authentication, session management, location tracking,
 	      and routing service requests to other network entities. The MME communicates with terminal
 	      devices and other network elements using protocols like NAS (Non Access Stratum) and GTP
-	      (GPRS Tunneling Protocol). 
+	      (GPRS Tunneling Protocol).
 	      % \item \textbf{\hypertarget{MME}{MME}}: L'Mobility Management Entity (MME) è un componente software nel
 	      %       core network delle reti mobili 4G e 5G, responsabile della gestione della mobilità degli utenti
 	      %       e della segnalazione. Svolge funzioni chiave come l'autenticazione degli utenti, la gestione
